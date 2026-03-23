@@ -141,6 +141,19 @@
       font-size: 0.85rem;
       color: #6b7c70;
     }
+ .meeting-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.meeting-item {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+}
   </style>
 </head>
 
@@ -149,7 +162,7 @@
   <!-- HERO -->
   <section class="hero">
     <h1>Flowing River Sangha</h1>
-    <div class="tagline">Magandjin / Brisbane * Est. 2017</div>
+    <div class="tagline"> We're nice people. Come sit near us in Magandjin / Brisbane</div>
   </section>
 
   <!-- IMAGE -->
@@ -157,37 +170,36 @@
     <img src="PV-nuns copy.jpg" alt="Sangha walking peacefully">
   </div>
 
-
-<!-- MEETINGS -->
-<section class="meetings">
-  <h2>Welcome to Flowing River</h2>
-<p class="meeting-intro">
-    We're nice people. Come sit near us.  </p>
-
 <!-- MEETINGS -->
 <section class="meetings">
   <h2>Practice Schedule</h2>
   
-
   <p class="meeting-intro">
     Join us any Monday night from 6:30pm to 8pm AEST. No need to let us know, just drop in.<br>
     We follow a hybrid online / in-person meeting schedule, so check the calendar below.
   </p>
+  
+  <div class="meeting-row">
 
   <div class="meeting-item">
-    <h3>Online</h3>
+    <strong>Online</strong><br>
     Every Monday<br>
-    6:30pm – 8:00pm AEST<br>
+    6:30pm – 8:00pm<br>
     Zoom: https://zoom.us/j/453389993
   </div>
 
   <div class="meeting-item">
-    <h3>In-Person</h3>
-    Every 1st and 3rd Monday of each month (see Calendar)<br>
-    6:30pm – 8:00pm AEST<br>
-    Address: House Conspiracy, 42 Mollison St, West End QLD 4101<br> 
-    <em>No need to book. When you arrive, walk through the gate at the end of the driveway, 'round the back and up the stairs</em>
+    <strong>In-Person</strong><br>
+ Every 1st and 3rd Monday of each month (see Calendar)<br>
+    6:30pm – 8:00pm<br>
+    House Conspiracy, 42 Mollison St, West End QLD 4101<br> 
+    <em>No need to book. Walk through the side gate, 'round the back and up the stairs, to find us upstairs</em>
   </div>
+
+      <div class="calendar-image">
+      <img src="calendar.jpg" alt="Meeting calendar">
+    </div>
+
 
   <!-- Calendar Image -->
     <div class="calendar-image">
