@@ -111,7 +111,30 @@
       margin: 1.5rem 0;
     }
 
-    .calendar-image img {
+}
+    /* Lightbox background */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 30, 25, 0.85); /* soft dark green */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Enlarged image */
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+}
+
+/* Make image feel clickable */
+.calendar-image img {
   cursor: zoom-in;
   transition: opacity 0.2s ease;
 }
@@ -207,9 +230,12 @@
 
     <!-- Calendar Image -->
 <div class="calendar-image">
-  <a href="calendar.jpg" target="_blank">
-    <img src="calendar.jpg" alt="Meeting calendar">
-  </a>
+  <img src="calendar.jpg" alt="Meeting calendar" onclick="openLightbox()">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img src="calendar.jpg" alt="Enlarged calendar">
 </div>
 <br>
 
