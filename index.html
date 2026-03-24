@@ -111,29 +111,6 @@
       margin: 1.5rem 0;
     }
 
-}
-    /* Lightbox background */
-#lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(20, 30, 25, 0.85); /* soft dark green */
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* Enlarged image */
-#lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 6px;
-}
-
-/* Make image feel clickable */
 .calendar-image img {
   cursor: zoom-in;
   transition: opacity 0.2s ease;
@@ -141,6 +118,7 @@
 
 .calendar-image img:hover {
   opacity: 0.85;
+}
 }
 
     /* BOTTOM BOXES */
@@ -228,17 +206,12 @@
     <em><small>Walk through the side gate, 'round the back and up the stairs, to find us.</em></small>
   </div>
 
-    <!-- Calendar Image -->
+<!-- Calendar Image -->
 <div class="calendar-image">
-  <img src="calendar.jpg" alt="Meeting calendar" onclick="openLightbox()">
+  <a href="calendar.jpg" target="_blank">
+    <img src="calendar.jpg" alt="Meeting calendar">
+  </a>
 </div>
-
-<!-- Lightbox -->
-<div id="lightbox" onclick="closeLightbox()">
-  <img src="calendar.jpg" alt="Enlarged calendar">
-</div>
-<br>
-
 <div class="subheading">All welcome – No experience required</div>
 </section>
 
