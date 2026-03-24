@@ -111,13 +111,17 @@
       margin: 1.5rem 0;
     }
 
-.calendar-image img {
+}
+    .calendar-image img {
   cursor: zoom-in;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease; /* Added transform to the transition */
+  width: 115%; /* This makes the base size 15% larger than its container */
+  height: auto;
 }
 
 .calendar-image img:hover {
   opacity: 0.85;
+  transform: scale(1.05); /* Optional: adds a slight extra 'pop' on hover */
 }
 }
 
